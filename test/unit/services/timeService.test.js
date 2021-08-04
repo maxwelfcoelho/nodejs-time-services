@@ -1,6 +1,6 @@
 const { set,reset } = require('mockdate');
 
-const TimeService = require('../../../src/services/TimeService.js');
+const { TimeService } = require('../../../src/services/TimeService.js');
 
 describe('time service', () => {
     const date = '2021-07-14T18:07:10.431Z';

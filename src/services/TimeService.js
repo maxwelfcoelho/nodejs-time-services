@@ -19,4 +19,7 @@ class TimeService {
     }
 }
 
-module.exports = TimeService;
+module.exports = {
+    TimeService,
+    supportedTimezones
+};
