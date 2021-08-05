@@ -1,4 +1,4 @@
-const { set,reset } = require('mockdate');
+const sinon = require('sinon');
 
 const { TimeService } = require('../../../src/services/TimeService.js');
 
@@ -6,12 +6,14 @@ describe('time service', () => {
     const date = '2021-07-14T18:07:10.431Z';
     const timeService = new TimeService();
 
+    let clock;
+
     beforeEach(() => {
-        set(date);
+        clock = sinon.useFakeTimers(new Date(date).getTime());
     });
 
     afterEach(() => {
-        reset();
+        clock.restore();
     });
 
     test('time GMT timezone', () => {
