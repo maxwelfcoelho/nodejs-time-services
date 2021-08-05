@@ -10,11 +10,11 @@
     "test": "jest"
   },
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "sinon": "^11.1.2"
   },
   "devDependencies": {
     "jest": "^27.0.6",
-    "mockdate": "^3.0.5",
     "nodemon": "^2.0.12",
     "supertest": "^6.1.4"
   }
