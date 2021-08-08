@@ -17,7 +17,8 @@ yarn run test
 
 #### endpoints
 ```
-GET /time/current 
+GET /time/current
+GET /time/:operation/:value/:timeUnit
 ```
 
 This project was created to learn a little about about tdd, unit testing, integration testing an mocking.
